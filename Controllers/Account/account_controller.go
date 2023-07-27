@@ -2,6 +2,7 @@ package account
 
 import (
 	"context"
+	entitlements "palia-go/Controllers/Entitlements"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -69,7 +70,7 @@ func CreateAccount(c *gin.Context, db *mongo.Database) {
 			c.JSON(500, gin.H{"error": err.Error()})
 			return
 		}
-		CreateWallet(insertedAccount.AccountID, db)
+		entitlements.CreateWallet(insertedAccount.AccountID, db)
 		c.JSON(201, insertedAccount)
 	}
 }

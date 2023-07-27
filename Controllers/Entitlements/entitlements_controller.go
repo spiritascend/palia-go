@@ -1,4 +1,4 @@
-package account
+package entitlements
 
 import (
 	"context"
