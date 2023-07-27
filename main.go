@@ -35,6 +35,10 @@ func main() {
 		account.HandleLogin(c, paliaDB)
 	})
 
+	r.GET("/entitlement/api/v1/wallet/:cid", func(c *gin.Context) {
+		account.GetWallet(c, paliaDB)
+	})
+
 	r.GET("/auth-proxy/api/v1/auth/validate", func(c *gin.Context) {
 		c.JSON(200, gin.H{})
 	})
@@ -42,6 +46,10 @@ func main() {
 	r.GET("/character/api/v2/characters/:cid", func(c *gin.Context) {
 		cid := c.Param("cid")
 		character.GetAccountCharacter(c, paliaDB, cid)
+	})
+
+	r.POST("/character/api/v2/characters", func(c *gin.Context) {
+		character.CreateUserCharacter(c, paliaDB)
 	})
 
 	r.Run("127.0.0.1:80")

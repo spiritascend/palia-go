@@ -13,10 +13,10 @@ import (
 )
 
 type Account struct {
-	ID        primitive.ObjectID `bson:"_id,omitempty"`
-	Email     string             `bson:"email"`
-	AccountID string             `bson:"id"`
-	Username  string             `bson:"username"`
+	ID        primitive.ObjectID `bson:"_id,omitempty" json:"_id,omitempty"`
+	Email     string             `bson:"email" json:"email,omitempty"`
+	AccountID string             `bson:"id" json:"account_id,omitempty"`
+	Username  string             `bson:"username" json:"username,omitempty"`
 }
 
 func CreateAccount(c *gin.Context, db *mongo.Database) {
@@ -69,6 +69,7 @@ func CreateAccount(c *gin.Context, db *mongo.Database) {
 			c.JSON(500, gin.H{"error": err.Error()})
 			return
 		}
+		CreateWallet(insertedAccount.AccountID, db)
 		c.JSON(201, insertedAccount)
 	}
 }
