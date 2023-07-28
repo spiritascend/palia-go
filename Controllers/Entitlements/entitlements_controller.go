@@ -42,27 +42,27 @@ func CreateWallet(accountid string, db *mongo.Database) {
 	}
 }
 
-func GetWallet(c *gin.Context, db *mongo.Database, accountId string) {
+func GetWallet(c *gin.Context, db *mongo.Database) {
 	ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
 	defer cancel()
 
 	walletcollection := db.Collection("wallets")
 
 	if walletcollection == nil {
-		c.JSON(400, gin.H{"error": "Failed To Find Wallet Collection"})
+		c.JSON(400, gin.H{"Error": "Failed To Find Wallet Collection"})
 		return
 	}
 
 	var FoundWallet Wallet
 
 	filter := bson.M{
-		"account_id": strings.ToLower(accountId),
+		"account_id": strings.ToLower(c.GetHeader("X-Authenticated-Character")),
 	}
 
 	err := walletcollection.FindOne(ctx, filter).Decode(&FoundWallet)
 
 	if err == mongo.ErrNoDocuments {
-		c.JSON(400, gin.H{"error": "Failed To Find Wallet"})
+		c.JSON(400, gin.H{"Error": "Failed To Find Wallet"})
 		return
 	}
 

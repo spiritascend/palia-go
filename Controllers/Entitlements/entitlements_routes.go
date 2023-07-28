@@ -7,7 +7,6 @@ import (
 
 func RegisterRoutes(r *gin.Engine, db *mongo.Database) {
 	r.GET("/entitlement/api/v1/wallet/:cid", func(c *gin.Context) {
-		cid := c.Param("cid")
-		GetWallet(c, db, cid)
+		GetWallet(c, db)
 	})
 }

@@ -7,6 +7,7 @@ import (
 
 	account "palia-go/Controllers/Account"
 	character "palia-go/Controllers/Character"
+	chat "palia-go/Controllers/Chat"
 	entitlements "palia-go/Controllers/Entitlements"
 	matchmaker "palia-go/Controllers/Matchmaker"
 
@@ -34,6 +35,7 @@ func main() {
 	entitlements.RegisterRoutes(r, paliaDB)
 	character.RegisterRoutes(r, paliaDB)
 	matchmaker.RegisterRoutes(r)
+	chat.RegisterRoutes(r)
 
 	r.Run("127.0.0.1:80")
 }
