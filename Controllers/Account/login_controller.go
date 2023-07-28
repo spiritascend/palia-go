@@ -94,7 +94,7 @@ func HandleLogin(c *gin.Context, db *mongo.Database) {
 
 	filter := bson.M{"email": requestPayload.LoginId}
 
-	var FetchedAccount Account
+	var FetchedAccount Account_Schema
 	err := accountscollection.FindOne(ctx, filter).Decode(&FetchedAccount)
 
 	if err == mongo.ErrNoDocuments {
