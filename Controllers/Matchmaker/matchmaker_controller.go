@@ -48,7 +48,7 @@ func JoinMatchmakerStatus(c *gin.Context) {
 		return
 	}
 
-	ticket := MatchmakingTicket{
+	ticket := &MatchmakingTicket{
 		Ticket: struct {
 			TicketID string `json:"ticket_id"`
 			Player   struct {
@@ -68,7 +68,7 @@ func JoinMatchmakerStatus(c *gin.Context) {
 			} `json:"server"`
 			Expiry int `json:"expiry"`
 		}{
-			TicketID: "abc123",
+			TicketID: "0",
 			Player: struct {
 				AccountID   string `json:"account_id"`
 				CharacterID string `json:"character_id"`
@@ -96,14 +96,14 @@ func JoinMatchmakerStatus(c *gin.Context) {
 					Port       int    `json:"port"`
 					BeaconPort int    `json:"beacon_port"`
 				}{
-					Addr:       "35.166.35.161",
+					Addr:       "0.0.0.0",
 					Port:       28905,
 					BeaconPort: 41921,
 				},
 			},
 			Expiry: 1630000000,
 		},
-		Signature: "12345",
+		Signature: "0",
 	}
-	c.JSON(200, ticket)
+	c.JSON(200, *ticket)
 }

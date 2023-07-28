@@ -16,8 +16,11 @@ import (
 )
 
 func main() {
+
 	ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
 	defer cancel()
+
+	r := gin.Default()
 
 	client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb://localhost:27017"))
 	if err != nil {
@@ -27,41 +30,10 @@ func main() {
 
 	paliaDB := client.Database("Palia")
 
-	r := gin.Default()
-
-	r.POST("/register", func(c *gin.Context) {
-		account.CreateAccount(c, paliaDB)
-	})
-
-	r.POST("/api/login", func(c *gin.Context) {
-		account.HandleLogin(c, paliaDB)
-
-	})
-
-	r.GET("/auth-proxy/api/v1/auth/validate", func(c *gin.Context) {
-		c.JSON(200, gin.H{})
-	})
-
-	r.GET("/entitlement/api/v1/wallet/:cid", func(c *gin.Context) {
-		entitlements.GetWallet(c, paliaDB)
-	})
-
-	r.GET("/character/api/v2/characters/:cid", func(c *gin.Context) {
-		cid := c.Param("cid")
-		character.GetAccountCharacter(c, paliaDB, cid)
-	})
-
-	r.POST("/character/api/v2/characters", func(c *gin.Context) {
-		character.CreateUserCharacter(c, paliaDB)
-	})
-
-	r.POST("/matchmaker/api/v1/join", func(c *gin.Context) {
-		matchmaker.JoinMatchmaker(c)
-	})
-
-	r.POST("/matchmaker/api/v1/join/status", func(c *gin.Context) {
-		matchmaker.JoinMatchmakerStatus(c)
-	})
+	account.RegisterRoutes(r, paliaDB)
+	entitlements.RegisterRoutes(r, paliaDB)
+	character.RegisterRoutes(r, paliaDB)
+	matchmaker.RegisterRoutes(r)
 
 	r.Run("127.0.0.1:80")
 }

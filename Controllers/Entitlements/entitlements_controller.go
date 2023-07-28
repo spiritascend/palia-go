@@ -2,7 +2,6 @@ package entitlements
 
 import (
 	"context"
-	"fmt"
 	"log"
 	"strings"
 	"time"
@@ -10,7 +9,6 @@ import (
 	"github.com/gin-gonic/gin"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 type Wallet struct {
@@ -37,36 +35,34 @@ func CreateWallet(accountid string, db *mongo.Database) {
 	err := walletcollection.FindOne(ctx, filter).Decode(&DupeWallet)
 
 	if err == mongo.ErrNoDocuments {
-		newWallet := Wallet{accountid, 999999}
-		insertOptions := options.InsertOne().SetBypassDocumentValidation(true)
-		walletcollection.InsertOne(ctx, newWallet, insertOptions)
+		newWallet := &Wallet{accountid, 999999}
+		walletcollection.InsertOne(ctx, *newWallet)
 	} else {
 		log.Fatal("Failed to Create Wallet: Duplicate")
 	}
 }
 
-func GetWallet(c *gin.Context, db *mongo.Database) {
+func GetWallet(c *gin.Context, db *mongo.Database, accountId string) {
 	ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
 	defer cancel()
 
 	walletcollection := db.Collection("wallets")
 
 	if walletcollection == nil {
-		c.JSON(400, gin.H{"Error": "Failed To Find Wallet Collection"})
+		c.JSON(400, gin.H{"error": "Failed To Find Wallet Collection"})
 		return
 	}
 
 	var FoundWallet Wallet
 
-	fmt.Println(strings.ToLower(c.GetHeader("X-Authenticated-Character")))
 	filter := bson.M{
-		"account_id": strings.ToLower(c.GetHeader("X-Authenticated-Character")),
+		"account_id": strings.ToLower(accountId),
 	}
 
 	err := walletcollection.FindOne(ctx, filter).Decode(&FoundWallet)
 
 	if err == mongo.ErrNoDocuments {
-		c.JSON(400, gin.H{"Error": "Failed To Find Wallet"})
+		c.JSON(400, gin.H{"error": "Failed To Find Wallet"})
 		return
 	}
 

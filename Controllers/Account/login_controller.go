@@ -81,7 +81,7 @@ func HandleLogin(c *gin.Context, db *mongo.Database) {
 	var requestPayload LoginPayload
 
 	if err := c.BindJSON(&requestPayload); err != nil {
-		c.JSON(404, gin.H{"error": "Failed to parse Request Payload"})
+		c.JSON(500, gin.H{"error": "Failed to parse Request Payload"})
 		return
 	}
 
@@ -155,7 +155,7 @@ func HandleLogin(c *gin.Context, db *mongo.Database) {
 
 	response, err := json.Marshal(loginresponse)
 	if err != nil {
-		c.JSON(500, gin.H{"error": "Internal Server Error"})
+		c.JSON(500, gin.H{"error": "Failed to Login"})
 		return
 	}
 

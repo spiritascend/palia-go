@@ -8,7 +8,6 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
 	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 func CreateUserCharacter(c *gin.Context, db *mongo.Database) {
@@ -40,9 +39,7 @@ func CreateUserCharacter(c *gin.Context, db *mongo.Database) {
 	resp_struct.Characters = append(resp_struct.Characters, newCharacter)
 	newCharacter.Loadouts[0].Set_current_loadout = nil
 
-	insertOptions := options.InsertOne().SetBypassDocumentValidation(true)
-
-	_, err := characterCollection.InsertOne(ctx, resp_struct, insertOptions)
+	_, err := characterCollection.InsertOne(ctx, resp_struct)
 	if err != nil {
 		c.JSON(500, gin.H{"error": err.Error()})
 		return

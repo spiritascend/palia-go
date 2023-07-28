@@ -10,7 +10,6 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 type Account struct {
@@ -54,9 +53,8 @@ func CreateAccount(c *gin.Context, db *mongo.Database) {
 		return
 	} else {
 		createAccountPayload.AccountID = uuid.New().String()
-		insertOptions := options.InsertOne().SetBypassDocumentValidation(true)
 
-		result, err := accountscollection.InsertOne(ctx, createAccountPayload, insertOptions)
+		result, err := accountscollection.InsertOne(ctx, createAccountPayload)
 		if err != nil {
 			c.JSON(500, gin.H{"error": err.Error()})
 			return
