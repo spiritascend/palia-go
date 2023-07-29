@@ -101,7 +101,7 @@ func CreateAccount(c *gin.Context, db *mongo.Database) {
 			c.JSON(500, gin.H{"error": err.Error()})
 			return
 		}
-		entitlements.CreateWallet(newaccount.AccountID, db)
+		entitlements.CreateEntitlementProfile(newaccount.AccountID, db)
 		c.JSON(201, "Success")
 	}
 }

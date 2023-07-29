@@ -1,0 +1,3122 @@
+{
+    "campaign_id": "C4EBD1A3-4FD8321F-854ABFA2-5DF4CA54",
+    "metadata": {
+      "start_time": "2023-06-21T21:08:01Z",
+      "end_time": "2032-06-25T07:00:00Z",
+      "last_updated_at": "2023-07-24T19:20:53Z"
+    },
+    "title": {
+      "en_us": ""
+    },
+    "localized_title": "",
+    "widgets": [
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "e86dd080-22fb-11ed-8051-1632ef54888d",
+            "internal_name": "Soothsayer - Dark Druid",
+            "name": {
+              "en_us": "Soothsayer"
+            },
+            "localized_name": "Soothsayer",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "f7cdb100-0fd4-11ee-8101-fa3928291fb2",
+                  "internal_name": "Soothsayer - Empyreal [Dark Druid]",
+                  "name": {
+                    "en_us": "Empyreal"
+                  },
+                  "localized_name": "Empyreal",
+                  "items": [
+                    {
+                      "item_id": "6df1a211-4e78-18c9-3101-a388d0a9bb1c",
+                      "internal_name": "DA_CCI_Hat_DarkDruid01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "5955f85e-4d0b-b46b-6a48-d58fd742a626",
+                      "internal_name": "DA_CCI_Torso_DarkDruid01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 2550,
+                    "discounted_price": 2550,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "e1275a00-0fd4-11ee-8100-fa3928291fb2",
+                  "internal_name": "Soothsayer - Arboreal [Dark Druid]",
+                  "name": {
+                    "en_us": "Arboreal"
+                  },
+                  "localized_name": "Arboreal",
+                  "items": [
+                    {
+                      "item_id": "516a1f93-4b28-765c-9fed-90b5735e497b",
+                      "internal_name": "DA_CCI_Hat_DarkDruid01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "f4608123-4dec-d10f-ca51-54a29617b384",
+                      "internal_name": "DA_CCI_Torso_DarkDruid01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 2550,
+                    "discounted_price": 2550,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "bf007500-22fa-11ed-8037-96bd676e8aa2",
+                  "internal_name": "Soothsayer - Boreal [Dark Druid]",
+                  "name": {
+                    "en_us": "Boreal"
+                  },
+                  "localized_name": "Boreal",
+                  "items": [
+                    {
+                      "item_id": "c95637d1-4078-f268-98f4-3e98ea4710e9",
+                      "internal_name": "DA_CCI_Torso_DarkDruid01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "a49f4533-4eb6-434c-68e7-eba96a7a1afa",
+                      "internal_name": "DA_CCI_Hat_DarkDruid01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 2550,
+                    "discounted_price": 2550,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 7650,
+              "discounted_price": 5100,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 7650,
+          "discounted_price": 5100,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Set_DarkDruid.Set_DarkDruid",
+          "foreground_url": {
+            "masculine": "",
+            "feminine": ""
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "20751380-22fc-11ed-8041-96bd676e8aa2",
+            "internal_name": "Sky Captain Set",
+            "name": {
+              "en_us": "Sky Captain"
+            },
+            "localized_name": "Sky Captain",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "aba1d980-22fb-11ed-803a-96bd676e8aa2",
+                  "internal_name": "Sky Captain - Pilot",
+                  "name": {
+                    "en_us": "Pilot"
+                  },
+                  "localized_name": "Pilot",
+                  "items": [
+                    {
+                      "item_id": "a38b0a09-4ccb-5424-5dd2-e894cda5dab7",
+                      "internal_name": "DA_CCI_Hat_SkyCaptain01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "2b038747-4a77-271d-d7b0-ffbed05bcb8c",
+                      "internal_name": "DA_CCI_Legs_SkyCaptain01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "e7043dd2-4a4e-5de5-2190-219aae9f96d9",
+                      "internal_name": "DA_CCI_Torso_SkyCaptain01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 2550,
+                    "discounted_price": 2550,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "d5f39700-22fb-11ed-8050-1632ef54888d",
+                  "internal_name": "Sky Captain - Eagle",
+                  "name": {
+                    "en_us": "Eagle"
+                  },
+                  "localized_name": "Eagle",
+                  "items": [
+                    {
+                      "item_id": "5e2806b7-426d-41a0-11ef-178ed343561a",
+                      "internal_name": "DA_CCI_Torso_SkyCaptain01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "bbec8751-4f4f-edb1-e9d3-e0af8e311e25",
+                      "internal_name": "DA_CCI_Legs_SkyCaptain01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "b891ac7e-4e85-9ea2-d65e-488e56582b86",
+                      "internal_name": "DA_CCI_Hat_SkyCaptain01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 2550,
+                    "discounted_price": 2550,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "bfe5d680-22fb-11ed-804f-1632ef54888d",
+                  "internal_name": "Sky Captain - Ace",
+                  "name": {
+                    "en_us": "Ace"
+                  },
+                  "localized_name": "Ace",
+                  "items": [
+                    {
+                      "item_id": "77f06942-4463-ac53-95f0-ac8c0956d4b5",
+                      "internal_name": "DA_CCI_Hat_SkyCaptain01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "5e49a4a6-4299-e776-c65e-b2a60536e772",
+                      "internal_name": "DA_CCI_Legs_SkyCaptain01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "ebfa5969-4566-4f6c-314b-b8a3fd10b0d2",
+                      "internal_name": "DA_CCI_Torso_SkyCaptain01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 2550,
+                    "discounted_price": 2550,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 7650,
+              "discounted_price": 5100,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 7650,
+          "discounted_price": 5100,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Set_SkyCaptain.Set_SkyCaptain",
+          "foreground_url": {
+            "masculine": "",
+            "feminine": ""
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "9e42bf00-1159-11ee-823d-fa3928291fb2",
+            "internal_name": "Rogue - Rogue02",
+            "name": {
+              "en_us": "Rogue"
+            },
+            "localized_name": "Rogue",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "6f2c4d80-1159-11ee-823b-fa3928291fb2",
+                  "internal_name": "Rogue - Chameleon",
+                  "name": {
+                    "en_us": "Chameleon"
+                  },
+                  "localized_name": "Chameleon",
+                  "items": [
+                    {
+                      "item_id": "f7b0ed9b-4699-6ed7-375e-6f924dca364a",
+                      "internal_name": "DA_CCI_Legs_Rogue02_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "5827b08c-4360-419a-b063-23a6dc0961b9",
+                      "internal_name": "DA_CCI_Torso_Rogue02_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "5cb21400-1159-11ee-823a-fa3928291fb2",
+                  "internal_name": "Rogue - Undercover",
+                  "name": {
+                    "en_us": "Undercover"
+                  },
+                  "localized_name": "Undercover",
+                  "items": [
+                    {
+                      "item_id": "5fc5e1f2-46e4-f4c2-ba24-2e9ef46b2f61",
+                      "internal_name": "DA_CCI_Legs_Rogue02_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "cbe03e2b-43c4-f109-f175-dea58bcd7867",
+                      "internal_name": "DA_CCI_Torso_Rogue02_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "8408e100-1159-11ee-823c-fa3928291fb2",
+                  "internal_name": "Rogue - Slickster",
+                  "name": {
+                    "en_us": "Slickster"
+                  },
+                  "localized_name": "Slickster",
+                  "items": [
+                    {
+                      "item_id": "5e4b0cc4-4931-e54a-5e96-9fbd03741268",
+                      "internal_name": "DA_CCI_Legs_Rogue02_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "11794452-4cc8-1df6-e8ab-36845dc9955d",
+                      "internal_name": "DA_CCI_Torso_Rogue02_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 5100,
+              "discounted_price": 3400,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 5100,
+          "discounted_price": 3400,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Alpha_Banner_Cosmetics_Rogue01_Variant02.Alpha_Banner_Cosmetics_Rogue01_Variant02",
+          "foreground_url": {
+            "masculine": "",
+            "feminine": ""
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "4a1f5d00-0469-11ed-803c-16381a8831f6",
+            "internal_name": "Infiltrator - Rogue01 Set",
+            "name": {
+              "en_us": "Infiltrator"
+            },
+            "localized_name": "Infiltrator",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "47c0f280-03d8-11ed-800a-16381a8831f6",
+                  "internal_name": "Stealth - Rogue",
+                  "name": {
+                    "en_us": "Stealth"
+                  },
+                  "localized_name": "Stealth",
+                  "items": [
+                    {
+                      "item_id": "0768d692-4152-5249-19db-35a77ec5b27b",
+                      "internal_name": "DA_CCI_Legs_Rogue01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "326d83d9-47a1-2025-5d82-8794ed62b95f",
+                      "internal_name": "DA_CCI_Torso_Rogue01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "6b843880-03d8-11ed-800c-16381a8831f6",
+                  "internal_name": "Hypnosis - Rogue",
+                  "name": {
+                    "en_us": "Hypnosis"
+                  },
+                  "localized_name": "Hypnosis",
+                  "items": [
+                    {
+                      "item_id": "c10e59bf-4190-5f86-3feb-2089b685fe38",
+                      "internal_name": "DA_CCI_Torso_Rogue01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "51ed23de-4ca8-d64c-63e6-e7825b97e292",
+                      "internal_name": "DA_CCI_Legs_Rogue01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "59a29580-03d8-11ed-800b-16381a8831f6",
+                  "internal_name": "Camouflage - Rogue",
+                  "name": {
+                    "en_us": "Camouflage"
+                  },
+                  "localized_name": "Camouflage",
+                  "items": [
+                    {
+                      "item_id": "8d2bf4a0-4598-5450-21d7-baa1fdb75127",
+                      "internal_name": "DA_CCI_Legs_Rogue01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "a1e70d5f-4cd3-b54b-df1c-d38486d4c8e7",
+                      "internal_name": "DA_CCI_Torso_Rogue01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 5100,
+              "discounted_price": 3400,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 5100,
+          "discounted_price": 3400,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Set_Rogue01.Set_Rogue01",
+          "foreground_url": {
+            "masculine": "",
+            "feminine": ""
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "d7d0ba80-669e-11ed-8016-56271bb336ef",
+            "internal_name": "Tea Party",
+            "name": {
+              "en_us": "Afternoon Tea"
+            },
+            "localized_name": "Afternoon Tea",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "c8ea0800-669e-11ed-8002-064c6e28359e",
+                  "internal_name": "Tea Party - Butterfly Pea",
+                  "name": {
+                    "en_us": "Butterfly Pea"
+                  },
+                  "localized_name": "Butterfly Pea",
+                  "items": [
+                    {
+                      "item_id": "74202618-47b0-c6d0-8f2a-4fa89ad19846",
+                      "internal_name": "DA_CCI_Hat_Teaparty01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "32aacf61-46e8-4634-b2b7-529dfacf1609",
+                      "internal_name": "DA_CCI_Torso_Teaparty01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "b7a0fb80-669e-11ed-8015-56271bb336ef",
+                  "internal_name": "Tea Party - Lapsang",
+                  "name": {
+                    "en_us": "Lapsang"
+                  },
+                  "localized_name": "Lapsang",
+                  "items": [
+                    {
+                      "item_id": "a53bbe48-4c49-d164-7b61-fc92692f41b1",
+                      "internal_name": "DA_CCI_Hat_Teaparty01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "ac5930b3-4d97-dc3b-ac4b-8c908966a133",
+                      "internal_name": "DA_CCI_Torso_Teaparty01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "a0faa480-669e-11ed-8001-064c6e28359e",
+                  "internal_name": "Tea Party - Rosehips",
+                  "name": {
+                    "en_us": "Rosehips"
+                  },
+                  "localized_name": "Rosehips",
+                  "items": [
+                    {
+                      "item_id": "67c4b553-4a07-d502-2f39-8fb39c9aa878",
+                      "internal_name": "DA_CCI_Hat_Teaparty01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "eee88112-4812-6595-ecfc-1bbd62103b04",
+                      "internal_name": "DA_CCI_Torso_Teaparty01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 5100,
+              "discounted_price": 3400,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 5100,
+          "discounted_price": 3400,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Set_TeaParty.Set_TeaParty",
+          "foreground_url": {
+            "masculine": "",
+            "feminine": ""
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "be5a0080-0469-11ed-805e-16381a8831f6",
+            "internal_name": "Chapaajama - Chapaa Onesie Set",
+            "name": {
+              "en_us": "Chapaajama"
+            },
+            "localized_name": "Chapaajama",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "d2036800-0465-11ed-8025-16381a8831f6",
+                  "internal_name": "Chapaajama - Paws & Patchwork [Onesie]",
+                  "name": {
+                    "en_us": "Paws & Patchwork"
+                  },
+                  "localized_name": "Paws & Patchwork",
+                  "items": [
+                    {
+                      "item_id": "093df33c-4983-8e69-d742-99bee0c3f107",
+                      "internal_name": "DA_CCI_Torso_ChapaaOnesie01_Base_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "cadc5a00-0465-11ed-8024-16381a8831f6",
+                  "internal_name": "Chapaajama - Soft Stripes [Onesie]",
+                  "name": {
+                    "en_us": "Soft Stripes"
+                  },
+                  "localized_name": "Soft Stripes",
+                  "items": [
+                    {
+                      "item_id": "90a86bf4-4561-542c-1117-76ac3b3a26c4",
+                      "internal_name": "DA_CCI_Torso_ChapaaOnesie01_Base_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "c0ba5b80-0465-11ed-8023-16381a8831f6",
+                  "internal_name": "Chapaajama - Wild Style [Onesie]",
+                  "name": {
+                    "en_us": "Wild Style"
+                  },
+                  "localized_name": "Wild Style",
+                  "items": [
+                    {
+                      "item_id": "bc871756-4446-670f-300b-109133aa1677",
+                      "internal_name": "DA_CCI_Torso_ChapaaOnesie01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 5100,
+              "discounted_price": 3400,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 5100,
+          "discounted_price": 3400,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Set_ChappaOnesie.Set_ChappaOnesie",
+          "foreground_url": {
+            "masculine": "",
+            "feminine": ""
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "8a7edb00-0469-11ed-8050-16381a8831f6",
+            "internal_name": "Herbalist Set",
+            "name": {
+              "en_us": "Herbalist"
+            },
+            "localized_name": "Herbalist",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "6d023080-03d9-11ed-801b-16381a8831f6",
+                  "internal_name": "Herbalist - Fieldwork",
+                  "name": {
+                    "en_us": "Fieldwork"
+                  },
+                  "localized_name": "Fieldwork",
+                  "items": [
+                    {
+                      "item_id": "8b12cab8-4e5c-856c-7a06-d7b955b1da30",
+                      "internal_name": "DA_CCI_Legs_Herbalist01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "a5b9d27c-4f05-90e6-7bd0-4ebde1817052",
+                      "internal_name": "DA_CCI_Torso_Herbalist01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "64a9f580-03d9-11ed-801a-16381a8831f6",
+                  "internal_name": "Herbalist - Nightshade Outfit",
+                  "name": {
+                    "en_us": "Nightshade"
+                  },
+                  "localized_name": "Nightshade",
+                  "items": [
+                    {
+                      "item_id": "fde24cf9-4c07-0ca9-f6bb-f28397801595",
+                      "internal_name": "DA_CCI_Torso_Herbalist01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "96f51c78-4ab9-efee-d7e7-82abe752195e",
+                      "internal_name": "DA_CCI_Legs_Herbalist01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "5cea5100-03d9-11ed-8019-16381a8831f6",
+                  "internal_name": "Herbalist - Greenhouse",
+                  "name": {
+                    "en_us": "Greenhouse"
+                  },
+                  "localized_name": "Greenhouse",
+                  "items": [
+                    {
+                      "item_id": "0f263604-4655-e339-54b2-9495bffad60e",
+                      "internal_name": "DA_CCI_Legs_Herbalist01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "384b222f-4a6c-5dc3-e1f1-31a49bdd4b50",
+                      "internal_name": "DA_CCI_Torso_Herbalist01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 3825,
+              "discounted_price": 2549,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 3825,
+          "discounted_price": 2549,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Alpha_Banner_Cosmetics_Herbalist01_Quilted.Alpha_Banner_Cosmetics_Herbalist01_Quilted",
+          "foreground_url": {
+            "masculine": "",
+            "feminine": ""
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "8ee93780-0fda-11ee-812f-fa3928291fb2",
+            "internal_name": "Buccaneer - Pirate",
+            "name": {
+              "en_us": "Buccaneer"
+            },
+            "localized_name": "Buccaneer",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "7e38c180-0fda-11ee-812e-fa3928291fb2",
+                  "internal_name": "Buccaneer - Treasure Hunter [Pirate]",
+                  "name": {
+                    "en_us": "Treasure Hunter"
+                  },
+                  "localized_name": "Treasure Hunter",
+                  "items": [
+                    {
+                      "item_id": "6a17e42b-4e3c-93c3-8087-9298855a0b29",
+                      "internal_name": "DA_CCI_Hat_Pirate01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "535c09f2-4f9e-63c9-5169-23b4e927dcbb",
+                      "internal_name": "DA_CCI_Legs_Pirate01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "9494344b-47c4-76e1-2ddb-928b1e6ea642",
+                      "internal_name": "DA_CCI_Torso_Pirate01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "4e89b980-0fda-11ee-812c-fa3928291fb2",
+                  "internal_name": "Buccaneer - Seafarer [Pirate]",
+                  "name": {
+                    "en_us": "Seafarer"
+                  },
+                  "localized_name": "Seafarer",
+                  "items": [
+                    {
+                      "item_id": "5d4f9e48-4c2d-89f6-1769-5dbdef3ec4ba",
+                      "internal_name": "DA_CCI_Torso_Pirate01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "92e3d070-45ab-2aaf-b3cc-2c9da7ab5565",
+                      "internal_name": "DA_CCI_Legs_Pirate01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "3441699d-4286-04fa-9a80-54a405c5bb98",
+                      "internal_name": "DA_CCI_Hat_Pirate01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "66613d80-0fda-11ee-812d-fa3928291fb2",
+                  "internal_name": "Buccaneer - Reaver [Pirate]",
+                  "name": {
+                    "en_us": "Reaver"
+                  },
+                  "localized_name": "Reaver",
+                  "items": [
+                    {
+                      "item_id": "58ec61d5-47cd-e2e4-5ab9-d8a3e2a428db",
+                      "internal_name": "DA_CCI_Hat_Pirate01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "b434dbbc-40d0-0b4c-a40e-6d817877f316",
+                      "internal_name": "DA_CCI_Legs_Pirate01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "6ad03067-4c0a-85f5-2e13-a5804a5e6306",
+                      "internal_name": "DA_CCI_Torso_Pirate01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 5100,
+              "discounted_price": 3400,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 5100,
+          "discounted_price": 3400,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Set_Pirate01.Set_Pirate01",
+          "foreground_url": {
+            "masculine": "not used",
+            "feminine": "not used"
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "13f0bb00-22fc-11ed-803e-96bd676e8aa2",
+            "internal_name": "Bard Star Set",
+            "name": {
+              "en_us": "Bard"
+            },
+            "localized_name": "Bard",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "9270c480-0fc2-11ee-80e3-fa3928291fb2",
+                  "internal_name": "Bard - New Age",
+                  "name": {
+                    "en_us": "New Age"
+                  },
+                  "localized_name": "New Age",
+                  "items": [
+                    {
+                      "item_id": "436c1b33-464e-a75a-0d0e-b4983ff70a56",
+                      "internal_name": "DA_CCI_Legs_BardStar01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "ee97106e-4b85-afc8-bb71-cb86224da915",
+                      "internal_name": "DA_CCI_Torso_BardStar01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "8422a880-0fc2-11ee-80e2-fa3928291fb2",
+                  "internal_name": "Bard - Ballad",
+                  "name": {
+                    "en_us": "Ballad"
+                  },
+                  "localized_name": "Ballad",
+                  "items": [
+                    {
+                      "item_id": "b9b5110d-4f67-b423-809f-7db8f8d8d1cd",
+                      "internal_name": "DA_CCI_Legs_BardStar01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "4ff5dae7-4f5b-9157-77b6-8d889a7d5a04",
+                      "internal_name": "DA_CCI_Torso_BardStar01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "86ad6680-22fb-11ed-804e-1632ef54888d",
+                  "internal_name": "Bard - Rock Star",
+                  "name": {
+                    "en_us": "Rock Star"
+                  },
+                  "localized_name": "Rock Star",
+                  "items": [
+                    {
+                      "item_id": "c954aceb-49dd-f0b6-28b2-348e2a55cd29",
+                      "internal_name": "DA_CCI_Legs_BardStar01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "1344ad48-4132-f7a8-e45d-cfa42b90ba5c",
+                      "internal_name": "DA_CCI_Torso_BardStar01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 5100,
+              "discounted_price": 3400,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 5100,
+          "discounted_price": 3400,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Set_BardStar.Set_BardStar",
+          "foreground_url": {
+            "masculine": "",
+            "feminine": ""
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "56a3b580-0469-11ed-8040-16381a8831f6",
+            "internal_name": "Explorer",
+            "name": {
+              "en_us": "Trailblazer"
+            },
+            "localized_name": "Trailblazer",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "9b334080-03d8-11ed-800e-16381a8831f6",
+                  "internal_name": "Explorer - Jungle Scout",
+                  "name": {
+                    "en_us": "Jungle Scout"
+                  },
+                  "localized_name": "Jungle Scout",
+                  "items": [
+                    {
+                      "item_id": "458831bb-41db-4c38-b867-689cd246ad70",
+                      "internal_name": "DA_CCI_Legs_Explorer01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "fa0fa0ed-4d7b-79eb-dff6-ffbcf81c8b7c",
+                      "internal_name": "DA_CCI_Torso_Explorer01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "a6866c00-03d8-11ed-800f-16381a8831f6",
+                  "internal_name": "Explorer - Forest Watch",
+                  "name": {
+                    "en_us": "Forest Watch"
+                  },
+                  "localized_name": "Forest Watch",
+                  "items": [
+                    {
+                      "item_id": "3e7c4ce1-474d-1954-dfba-46b70aa46b02",
+                      "internal_name": "DA_CCI_Legs_Explorer01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "6cd4be5e-4b5a-198f-9035-4aa7a2e88cad",
+                      "internal_name": "DA_CCI_Torso_Explorer01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "8fe01500-03d8-11ed-800d-16381a8831f6",
+                  "internal_name": "Explorer - Voyager",
+                  "name": {
+                    "en_us": "Voyager"
+                  },
+                  "localized_name": "Voyager",
+                  "items": [
+                    {
+                      "item_id": "c1e1688c-4149-cf44-17cd-e5927da946ca",
+                      "internal_name": "DA_CCI_Torso_Explorer01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "af988e3e-4dd4-434e-159d-bdb2347ec195",
+                      "internal_name": "DA_CCI_Legs_Explorer01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1700,
+                    "discounted_price": 1700,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 5100,
+              "discounted_price": 3400,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 5100,
+          "discounted_price": 3400,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Alpha_Banner_Cosmetics_Explorer01_Base.Alpha_Banner_Cosmetics_Explorer01_Base",
+          "foreground_url": {
+            "masculine": "",
+            "feminine": ""
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "3657f600-0398-11ed-8001-16381a8831f6",
+            "internal_name": "Academy Set",
+            "name": {
+              "en_us": "Collegiate"
+            },
+            "localized_name": "Collegiate",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "2ce88f80-0465-11ed-8020-16381a8831f6",
+                  "internal_name": "Academy - Professor",
+                  "name": {
+                    "en_us": "Professor"
+                  },
+                  "localized_name": "Professor",
+                  "items": [
+                    {
+                      "item_id": "bde5fb71-4aea-989c-3557-fcbcc6277bbc",
+                      "internal_name": "DA_CCI_Torso_Academy01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "1009f555-494c-dede-0302-1496e2245285",
+                      "internal_name": "DA_CCI_Legs_Academy01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "776a0c00-0465-11ed-8021-16381a8831f6",
+                  "internal_name": "Academy - Alumni",
+                  "name": {
+                    "en_us": "Alumni"
+                  },
+                  "localized_name": "Alumni",
+                  "items": [
+                    {
+                      "item_id": "1c02e4e9-47c1-17bb-b953-c695fc4d8e0d",
+                      "internal_name": "DA_CCI_Legs_Academy01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "5f45706f-43c5-a938-55d9-5b87bee7446e",
+                      "internal_name": "DA_CCI_Torso_Academy01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "2dffbb00-0398-11ed-8000-16381a8831f6",
+                  "internal_name": "Academy - Graduate",
+                  "name": {
+                    "en_us": "Graduate"
+                  },
+                  "localized_name": "Graduate",
+                  "items": [
+                    {
+                      "item_id": "2b10cc43-4863-6434-6c64-fdba28045dab",
+                      "internal_name": "DA_CCI_Legs_Academy01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "01861b52-4628-092c-bb2b-7fb0a5080180",
+                      "internal_name": "DA_CCI_Torso_Academy01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 3825,
+              "discounted_price": 2549,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 3825,
+          "discounted_price": 2549,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Alpha_Banner_Cosmetics_Academy01_Stripes.Alpha_Banner_Cosmetics_Academy01_Stripes",
+          "foreground_url": {
+            "masculine": "",
+            "feminine": ""
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "682b7380-1803-11ed-8022-1632ef54888d",
+            "internal_name": "Making Moves - Urban Sport Set",
+            "name": {
+              "en_us": "Making Moves"
+            },
+            "localized_name": "Making Moves",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "26023200-1803-11ed-8022-96bd676e8aa2",
+                  "internal_name": "Hype Heat - Making Moves [Urban Sport]",
+                  "name": {
+                    "en_us": "Hype Heat"
+                  },
+                  "localized_name": "Hype Heat",
+                  "items": [
+                    {
+                      "item_id": "940ad0c8-414e-fb54-7f07-178a95d57516",
+                      "internal_name": "DA_CCI_Torso_UrbanSport01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "d28b2d22-4321-4a9b-36a8-a599c3487aac",
+                      "internal_name": "DA_CCI_Legs_UrbanSport01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "403c1000-1803-11ed-8021-1632ef54888d",
+                  "internal_name": "Making Moves - High Impact [Urban Sport]",
+                  "name": {
+                    "en_us": "High Impact"
+                  },
+                  "localized_name": "High Impact",
+                  "items": [
+                    {
+                      "item_id": "d05363f8-4971-2f87-8023-9681226bfb06",
+                      "internal_name": "DA_CCI_Legs_UrbanSport01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "5e88521d-4d32-0a71-c1be-dc841fc8193d",
+                      "internal_name": "DA_CCI_Torso_UrbanSport01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "12ef6200-1803-11ed-8020-1632ef54888d",
+                  "internal_name": "Making Moves - Street Style [Urban Sport]",
+                  "name": {
+                    "en_us": "Street Style"
+                  },
+                  "localized_name": "Street Style",
+                  "items": [
+                    {
+                      "item_id": "759dcb9f-4258-c7d8-51b1-cea8a665e73f",
+                      "internal_name": "DA_CCI_Legs_UrbanSport01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "f40dbc98-4fb3-2670-62be-3a84bb46cc9e",
+                      "internal_name": "DA_CCI_Torso_UrbanSport01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 3825,
+              "discounted_price": 2549,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 3825,
+          "discounted_price": 2549,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Set_UrbanSport.Set_UrbanSport",
+          "foreground_url": {
+            "masculine": "",
+            "feminine": ""
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "d598ee00-0469-11ed-8066-16381a8831f6",
+            "internal_name": "Fiberpunk - FibrePunk Set",
+            "name": {
+              "en_us": "Fiberpunk"
+            },
+            "localized_name": "Fiberpunk",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "23f8bd80-0467-11ed-802a-16381a8831f6",
+                  "internal_name": "Fiberpunk - Earthshaker [Fibrepunk]",
+                  "name": {
+                    "en_us": "Earthshaker"
+                  },
+                  "localized_name": "Earthshaker",
+                  "items": [
+                    {
+                      "item_id": "5e3772fa-4659-7d77-e024-7aa967c9f0c0",
+                      "internal_name": "DA_CCI_Legs_FutureFashion01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "47476276-40b1-adf2-5456-e292a2d4e649",
+                      "internal_name": "DA_CCI_Torso_FutureFashion01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "5f938780-0467-11ed-802b-16381a8831f6",
+                  "internal_name": "Fiberpunk - Skyshatter [Fibrepunk]",
+                  "name": {
+                    "en_us": "Skyshatter"
+                  },
+                  "localized_name": "Skyshatter",
+                  "items": [
+                    {
+                      "item_id": "9db23357-43ea-4458-f02f-d0aef0e5d20f",
+                      "internal_name": "DA_CCI_Torso_FutureFashion01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "01e9838b-4bba-4c4b-0157-5eb7b167d871",
+                      "internal_name": "DA_CCI_Legs_FutureFashion01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "f01d9800-0466-11ed-8029-16381a8831f6",
+                  "internal_name": "Fiberpunk - Groundbreaker [Fibrepunk]",
+                  "name": {
+                    "en_us": "Groundbreaker"
+                  },
+                  "localized_name": "Groundbreaker",
+                  "items": [
+                    {
+                      "item_id": "82c6366a-41be-0b89-6eb8-4597dce6c8e7",
+                      "internal_name": "DA_CCI_Legs_FutureFashion01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "0e37c068-4c64-be76-b5ee-f4b72827639a",
+                      "internal_name": "DA_CCI_Torso_FutureFashion01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 3825,
+              "discounted_price": 2549,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 3825,
+          "discounted_price": 2549,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Set_FutureFashion.Set_FutureFashion",
+          "foreground_url": {
+            "masculine": "",
+            "feminine": ""
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "63280e00-0469-11ed-8044-16381a8831f6",
+            "internal_name": "Buckaroo - Rancher Set",
+            "name": {
+              "en_us": "Buckaroo"
+            },
+            "localized_name": "Buckaroo",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "c28a0d80-03d8-11ed-8011-16381a8831f6",
+                  "internal_name": "Buckaroo - Carved Canyon [Rancher]",
+                  "name": {
+                    "en_us": "Carved Canyon"
+                  },
+                  "localized_name": "Carved Canyon",
+                  "items": [
+                    {
+                      "item_id": "8bf5bb9f-4d2f-7233-b621-fbaceeeff0a4",
+                      "internal_name": "DA_CCI_Legs_Rancher01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "cb8ffd80-4362-542c-4ed7-d3a5c98f4766",
+                      "internal_name": "DA_CCI_Hat_Rancher01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "129102a8-49d6-5b33-e259-1388ebfcbbb6",
+                      "internal_name": "DA_CCI_Torso_Rancher01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "b56d1e80-03d8-11ed-8010-16381a8831f6",
+                  "internal_name": "Buckaroo - Bone Dry [Rancher]",
+                  "name": {
+                    "en_us": "Bone Dry"
+                  },
+                  "localized_name": "Bone Dry",
+                  "items": [
+                    {
+                      "item_id": "4b8a524d-4bd4-fe93-2afa-b0ac324f5930",
+                      "internal_name": "DA_CCI_Legs_Rancher01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "9edf5d75-43aa-9261-ed53-bcbaf48c456d",
+                      "internal_name": "DA_CCI_Hat_Rancher01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "23a038f9-4a54-9f80-2229-619b6c76008a",
+                      "internal_name": "DA_CCI_Torso_Rancher01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "d03f9300-03d8-11ed-8012-16381a8831f6",
+                  "internal_name": "Buckaroo - Mesa Sky [Rancher]",
+                  "name": {
+                    "en_us": "Mesa Sky"
+                  },
+                  "localized_name": "Mesa Sky",
+                  "items": [
+                    {
+                      "item_id": "31bf70f6-4453-1438-f1a1-9c95e09a6bb3",
+                      "internal_name": "DA_CCI_Hat_Rancher01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "f3f38db9-497e-6574-040d-b49dca321c3e",
+                      "internal_name": "DA_CCI_Torso_Rancher01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "58c2f7a5-4d5e-8a31-5c8a-0aad963f25bc",
+                      "internal_name": "DA_CCI_Legs_Rancher01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 3825,
+              "discounted_price": 2549,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 3825,
+          "discounted_price": 2549,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Alpha_Banner_Cosmetics_Rancher01_Base.Alpha_Banner_Cosmetics_Rancher01_Base",
+          "foreground_url": {
+            "masculine": "",
+            "feminine": ""
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "788f1e80-1802-11ed-8018-96bd676e8aa2",
+            "internal_name": "Gliterrati - Regal Blazer Set",
+            "name": {
+              "en_us": "Gliterrati"
+            },
+            "localized_name": "Gliterrati",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "3960cd80-1802-11ed-801d-1632ef54888d",
+                  "internal_name": "Gliterrati - Royal [Regal Blazer]",
+                  "name": {
+                    "en_us": "Royal"
+                  },
+                  "localized_name": "Royal",
+                  "items": [
+                    {
+                      "item_id": "166e0591-441b-f0cf-ad69-ce8b33d73bab",
+                      "internal_name": "DA_CCI_Legs_RegalBlazer01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "2ce9b0ed-4506-cccb-a867-e8b4323f15fc",
+                      "internal_name": "DA_CCI_Facemask_RegalBlazer01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "dd7c23ad-43a4-e4c4-3d1e-82a4ba4b8b4a",
+                      "internal_name": "DA_CCI_Torso_RegalBlazer01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "63b28b00-1802-11ed-8017-96bd676e8aa2",
+                  "internal_name": "Gliterrati - Botanical [Regal Blazer]",
+                  "name": {
+                    "en_us": "Botanical"
+                  },
+                  "localized_name": "Botanical",
+                  "items": [
+                    {
+                      "item_id": "0d0d2c37-4525-ddc5-dcfc-67a680ac9c6f",
+                      "internal_name": "DA_CCI_Legs_RegalBlazer01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "e3a25046-49eb-1b5e-77c7-ac968a42d77b",
+                      "internal_name": "DA_CCI_Torso_RegalBlazer01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "79a38df9-4004-ede1-a99f-70879988e781",
+                      "internal_name": "DA_CCI_Facemask_RegalBlazer01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "51d0e800-1802-11ed-801e-1632ef54888d",
+                  "internal_name": "Gliterrati - Mythical [Regal Blazer]",
+                  "name": {
+                    "en_us": "Mythical"
+                  },
+                  "localized_name": "Mythical",
+                  "items": [
+                    {
+                      "item_id": "4ed1dfd6-42ae-3b86-708f-e28fe7d66e25",
+                      "internal_name": "DA_CCI_Legs_RegalBlazer01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "c8b029d3-4320-f2c2-9828-b78e3223fa38",
+                      "internal_name": "DA_CCI_Torso_RegalBlazer01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "6d2af7b3-477a-550c-0cca-8ba8d2ab2dd1",
+                      "internal_name": "DA_CCI_Facemask_RegalBlazer01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 3825,
+              "discounted_price": 2549,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 3825,
+          "discounted_price": 2549,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Set_RegalBlazer.Set_RegalBlazer",
+          "foreground_url": {
+            "masculine": "",
+            "feminine": ""
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "46d8a100-046a-11ed-8076-16381a8831f6",
+            "internal_name": "Seabreeze Sun's Out - Summer Set",
+            "name": {
+              "en_us": "Seabreeze Sun's Out"
+            },
+            "localized_name": "Seabreeze Sun's Out",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "311a9b80-03d8-11ed-8009-16381a8831f6",
+                  "internal_name": "Seabreeze Sun's Out - Fern [Summer]",
+                  "name": {
+                    "en_us": "Fern"
+                  },
+                  "localized_name": "Fern",
+                  "items": [
+                    {
+                      "item_id": "37f744c3-4f9f-d77e-2b9f-089b461cef41",
+                      "internal_name": "DA_CCI_Legs_Summer01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "fbc3ee02-4365-0ddb-f3c3-ef9742f2a79f",
+                      "internal_name": "DA_CCI_Torso_Summer01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "4367c74b-4192-881e-70fa-d08dfe88cf39",
+                      "internal_name": "DA_CCI_Hat_Summer01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "07617480-03d8-11ed-8007-16381a8831f6",
+                  "internal_name": "Seabreeze Sun's Out - Dune [Summer]",
+                  "name": {
+                    "en_us": "Dune"
+                  },
+                  "localized_name": "Dune",
+                  "items": [
+                    {
+                      "item_id": "088c49b5-4032-e87d-ec44-efb3e8c4f19d",
+                      "internal_name": "DA_CCI_Torso_Summer01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "b273f329-4d7d-df43-b17d-ef9db61040cd",
+                      "internal_name": "DA_CCI_Hat_Summer01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "9f38619e-45ed-8d4d-75a7-16bd654f9d3b",
+                      "internal_name": "DA_CCI_Legs_Summer01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "1b0cdb00-03d8-11ed-8008-16381a8831f6",
+                  "internal_name": "Seabreeze Sun's Out - Hibiscus [Summer]",
+                  "name": {
+                    "en_us": "Hibiscus"
+                  },
+                  "localized_name": "Hibiscus",
+                  "items": [
+                    {
+                      "item_id": "0193e5bf-4386-8e97-8101-39b8d812242e",
+                      "internal_name": "DA_CCI_Hat_Summer01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "f87fb486-4712-7e01-e178-ac9c2f4c7e56",
+                      "internal_name": "DA_CCI_Legs_Summer01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "6af91e4c-40af-9731-9ef1-b5b96265afe6",
+                      "internal_name": "DA_CCI_Torso_Summer01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 3825,
+              "discounted_price": 2549,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 3825,
+          "discounted_price": 2549,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Alpha_Banner_Cosmetics_Summer01_Variant01.Alpha_Banner_Cosmetics_Summer01_Variant01",
+          "foreground_url": {
+            "masculine": "",
+            "feminine": ""
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "f6bbec80-22fb-11ed-803b-96bd676e8aa2",
+            "internal_name": "Harvelia Work",
+            "name": {
+              "en_us": "Harvelia Work"
+            },
+            "localized_name": "Harvelia Work",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "ebb48c80-22fa-11ed-8039-96bd676e8aa2",
+                  "internal_name": "Sundrop",
+                  "name": {
+                    "en_us": "Sundrop"
+                  },
+                  "localized_name": "Sundrop",
+                  "items": [
+                    {
+                      "item_id": "3981d7bd-49fb-b4ea-8c04-00932a6f5d0d",
+                      "internal_name": "DA_CCI_Legs_Farmer01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "d3d7c212-4afb-ede5-4b2b-80af64a71c3b",
+                      "internal_name": "DA_CCI_Torso_Farmer01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "b876fb00-2304-11ed-8053-1632ef54888d",
+                  "internal_name": "Ormuu Enthusiast",
+                  "name": {
+                    "en_us": "Ormuu Enthusiast"
+                  },
+                  "localized_name": "Ormuu Enthusiast",
+                  "items": [
+                    {
+                      "item_id": "4cd7102f-408f-6eff-7b49-a780d1c5fab6",
+                      "internal_name": "DA_CCI_Legs_Farmer01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "7aa04fb9-45d6-fa74-8f46-8db3eebd13bd",
+                      "internal_name": "DA_CCI_Torso_Farmer01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "db9cad00-22fa-11ed-8038-96bd676e8aa2",
+                  "internal_name": "Harvelia Work - Sprout Tender",
+                  "name": {
+                    "en_us": "Sprout Tender"
+                  },
+                  "localized_name": "Sprout Tender",
+                  "items": [
+                    {
+                      "item_id": "fe2bf629-45ff-c324-bbc1-23be44d6d7ce",
+                      "internal_name": "DA_CCI_Legs_Farmer01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "b8996ed0-499a-7e45-1159-06b4a13d42d9",
+                      "internal_name": "DA_CCI_Torso_Farmer01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 3825,
+              "discounted_price": 2549,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 3825,
+          "discounted_price": 2549,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Set_Farmer.Set_Farmer",
+          "foreground_url": {
+            "masculine": "",
+            "feminine": ""
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "7b982880-0469-11ed-804c-16381a8831f6",
+            "internal_name": "Formal Set - Soiree",
+            "name": {
+              "en_us": "Soiree"
+            },
+            "localized_name": "Soiree",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "08df6c80-03d9-11ed-8017-16381a8831f6",
+                  "internal_name": "Soiree - Formal Finery [Formal]",
+                  "name": {
+                    "en_us": "Formal Finery"
+                  },
+                  "localized_name": "Formal Finery",
+                  "items": [
+                    {
+                      "item_id": "734eaa5b-42b0-c32b-90cb-438b7748dac0",
+                      "internal_name": "DA_CCI_Legs_Formal01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "fe7da2cc-4410-caf9-6dd4-cb9fd735d3e9",
+                      "internal_name": "DA_CCI_Torso_Formal01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "14329800-03d9-11ed-8018-16381a8831f6",
+                  "internal_name": "Soiree - Embroidered Ensemble [Formal]",
+                  "name": {
+                    "en_us": "Embroidered Ensemble"
+                  },
+                  "localized_name": "Embroidered Ensemble",
+                  "items": [
+                    {
+                      "item_id": "96988667-4ce7-c431-e73e-07951dc92c80",
+                      "internal_name": "DA_CCI_Legs_Formal01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "79cd6548-442f-1512-4dc5-b8807576439b",
+                      "internal_name": "DA_CCI_Torso_Formal01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "ffee9b00-03d8-11ed-8016-16381a8831f6",
+                  "internal_name": "Soiree - Pinstripe [Formal]",
+                  "name": {
+                    "en_us": "Pinstripe"
+                  },
+                  "localized_name": "Pinstripe",
+                  "items": [
+                    {
+                      "item_id": "6f90a943-4133-e629-c4b4-a783b010bdb6",
+                      "internal_name": "DA_CCI_Legs_Formal01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "e72abef1-430e-a134-d439-fdab8cea0477",
+                      "internal_name": "DA_CCI_Torso_Formal01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 1275,
+                    "discounted_price": 1275,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 3825,
+              "discounted_price": 2549,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 3825,
+          "discounted_price": 2549,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Alpha_Banner_Cosmetics_Formal01_Diamond.Alpha_Banner_Cosmetics_Formal01_Diamond",
+          "foreground_url": {
+            "masculine": "",
+            "feminine": ""
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "1e421b00-0fda-11ee-8128-fa3928291fb2",
+            "internal_name": "Spring Flair - Spring Field",
+            "name": {
+              "en_us": "Spring Flair"
+            },
+            "localized_name": "Spring Flair",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "e0dd8d80-0fd9-11ee-8126-fa3928291fb2",
+                  "internal_name": "Spring Flair - Heartdrop",
+                  "name": {
+                    "en_us": "Heartdrop"
+                  },
+                  "localized_name": "Heartdrop",
+                  "items": [
+                    {
+                      "item_id": "18ad65ca-4525-dcbf-e676-a396c4ca7535",
+                      "internal_name": "DA_CCI_Legs_Springfield01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "02021c6c-4687-6030-edf9-ff8c854b65a7",
+                      "internal_name": "DA_CCI_Torso_Springfield01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 850,
+                    "discounted_price": 850,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "cefbea80-0fd9-11ee-8125-fa3928291fb2",
+                  "internal_name": "Spring Flair - Sweet Leaf",
+                  "name": {
+                    "en_us": "Sweet Leaf"
+                  },
+                  "localized_name": "Sweet Leaf",
+                  "items": [
+                    {
+                      "item_id": "d58fea26-4628-3450-2ee9-8ebcc1bcf997",
+                      "internal_name": "DA_CCI_Legs_Springfield01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "2672d1da-4d4e-ee1c-f7c5-97930efc4575",
+                      "internal_name": "DA_CCI_Torso_Springfield01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 850,
+                    "discounted_price": 850,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "f357c700-0fd9-11ee-8127-fa3928291fb2",
+                  "internal_name": "Spring Flair - Briar Daisy",
+                  "name": {
+                    "en_us": "Briar Daisy"
+                  },
+                  "localized_name": "Briar Daisy",
+                  "items": [
+                    {
+                      "item_id": "8f798d8c-44d0-b233-4670-13a824b417cb",
+                      "internal_name": "DA_CCI_Legs_Springfield01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "af07acf2-402a-9330-12cf-06b483e84276",
+                      "internal_name": "DA_CCI_Torso_Springfield01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 850,
+                    "discounted_price": 850,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 2550,
+              "discounted_price": 1700,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 2550,
+          "discounted_price": 1700,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Set_Springfield01.Set_Springfield01",
+          "foreground_url": {
+            "masculine": "not used",
+            "feminine": "not used"
+          }
+        }
+      },
+      {
+        "widget_type": "unknown",
+        "widget_size": "large",
+        "contents": {
+          "set": {
+            "set_id": "debe1200-105f-11ee-8187-fa3928291fb2",
+            "internal_name": "Business - Vintage Biz",
+            "name": {
+              "en_us": "Business"
+            },
+            "localized_name": "Business",
+            "contents": [
+              {
+                "variant": {
+                  "variant_id": "c817bb00-105f-11ee-8186-fa3928291fb2",
+                  "internal_name": "Business - Smart & Savvy [Vintage Biz]",
+                  "name": {
+                    "en_us": "Smart & Savvy"
+                  },
+                  "localized_name": "Smart & Savvy",
+                  "items": [
+                    {
+                      "item_id": "da8ee5c3-4234-1488-bda6-1586a46a0b06",
+                      "internal_name": "DA_CCI_Legs_VintageBiz01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "1e14eaa5-43a7-f0dd-9db5-98b5045e1cf0",
+                      "internal_name": "DA_CCI_Torso_VintageBiz01_Variant02_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 850,
+                    "discounted_price": 850,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "b9c99f00-105f-11ee-8185-fa3928291fb2",
+                  "internal_name": "Business - Business Casual [Vintage Biz]",
+                  "name": {
+                    "en_us": "Business Casual"
+                  },
+                  "localized_name": "Business Casual",
+                  "items": [
+                    {
+                      "item_id": "27fa1066-4824-746f-2e94-928526f41523",
+                      "internal_name": "DA_CCI_Legs_VintageBiz01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "c34ea673-4c00-971e-2703-0bb7b71a07b8",
+                      "internal_name": "DA_CCI_Torso_VintageBiz01_Variant01_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 850,
+                    "discounted_price": 850,
+                    "owned": false
+                  }
+                }
+              },
+              {
+                "variant": {
+                  "variant_id": "a9192900-105f-11ee-8184-fa3928291fb2",
+                  "internal_name": "Business - Boardroom Bloom [Vintage Biz]",
+                  "name": {
+                    "en_us": "Boardroom Bloom"
+                  },
+                  "localized_name": "Boardroom Bloom",
+                  "items": [
+                    {
+                      "item_id": "4c2965e6-42c6-9b98-d017-e294326c1676",
+                      "internal_name": "DA_CCI_Legs_VintageBiz01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    },
+                    {
+                      "item_id": "4ef47a28-43d0-b604-b928-efb48e028e0e",
+                      "internal_name": "DA_CCI_Torso_VintageBiz01_Base_Parent",
+                      "name": {
+                        "en_us": ""
+                      },
+                      "localized_name": "",
+                      "tag": "None"
+                    }
+                  ],
+                  "price": {
+                    "price": 850,
+                    "discounted_price": 850,
+                    "owned": false
+                  }
+                }
+              }
+            ],
+            "price": {
+              "price": 2550,
+              "discounted_price": 1700,
+              "owned": false
+            }
+          }
+        },
+        "price": {
+          "price": 2550,
+          "discounted_price": 1700,
+          "owned": false
+        },
+        "headline": {
+          "en_us": ""
+        },
+        "name": {
+          "en_us": ""
+        },
+        "description": {
+          "en_us": ""
+        },
+        "localized_headline": "",
+        "localized_name": "",
+        "localized_description": "",
+        "assets": {
+          "background_url": "/Game/UI/PremiumStore/Assets/Screenshots/Set_VintageBiz01.Set_VintageBiz01",
+          "foreground_url": {
+            "masculine": "not used",
+            "feminine": "not used"
+          }
+        }
+      }
+    ]
+  }
