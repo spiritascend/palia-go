@@ -14,4 +14,8 @@ func RegisterRoutes(r *gin.Engine, db *mongo.Database) {
 	r.POST("/catalog/api/v1/purchase/:type", func(c *gin.Context) {
 		HandleStorefrontPurchase(c, db)
 	})
+
+	r.GET("/payment/api/v2/products/currencies/:id", func(c *gin.Context) {
+		c.JSON(200, gin.H{"currency": "USD"})
+	})
 }
