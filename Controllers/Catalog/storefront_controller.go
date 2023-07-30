@@ -1,11 +1,17 @@
 package catalog
 
 import (
+	"context"
+	"encoding/json"
 	"net/http"
 	"os"
+	entitlements "palia-go/Controllers/Entitlements"
+	"strings"
 	"time"
 
 	"github.com/gin-gonic/gin"
+	"go.mongodb.org/mongo-driver/mongo"
+	"golang.org/x/exp/slices"
 )
 
 type Storefront struct {
@@ -88,12 +94,48 @@ type Widgets struct {
 	Assets               Assets       `json:"assets"`
 }
 
-func GetStaticCatalogStorefront(c *gin.Context) {
+func GetStaticCatalogStorefront(c *gin.Context, db *mongo.Database, accountid string) {
+	ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
+	defer cancel()
+
+	var ItemShopResponse Storefront
 	jsonData, err := os.ReadFile("itemshop.json")
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Itemshop Static Not Found"})
 		return
 	}
-	c.Header("Content-Type", "application/json")
-	c.Data(http.StatusOK, "application/json", jsonData)
+
+	if err := json.Unmarshal(jsonData, &ItemShopResponse); err != nil {
+		c.JSON(500, gin.H{"error": "Failed to parse JSON data"})
+		return
+	}
+
+	entitlementcollection := db.Collection("entitlements")
+
+	if entitlementcollection == nil {
+		c.JSON(400, gin.H{"error": "Failed To Find Entitlement Collection"})
+		return
+	}
+
+	entitlements, err := entitlements.GetEntitlementProfile(ctx, accountid, entitlementcollection)
+
+	if err == mongo.ErrNoDocuments {
+		c.JSON(400, gin.H{"error": "Failed to Find Entitlement Collection"})
+	}
+
+	for Widget := range ItemShopResponse.Widgets {
+
+		ItemShopResponse.Widgets[Widget].Contents.Set.Price.Owned = slices.Contains(entitlements.Entitlements, strings.ToUpper(ItemShopResponse.Widgets[Widget].Contents.Set.SetID))
+
+		for Variant := range ItemShopResponse.Widgets[Widget].Contents.Set.Contents {
+			ItemShopResponse.Widgets[Widget].Contents.Set.Contents[Variant].Variant.Price.Owned = slices.Contains(entitlements.Entitlements, strings.ToUpper(ItemShopResponse.Widgets[Widget].Contents.Set.Contents[Variant].Variant.VariantID))
+		}
+	}
+
+	response, err := json.Marshal(ItemShopResponse)
+	if err != nil {
+		c.JSON(500, gin.H{"error": "Internal Server Error"})
+		return
+	}
+	c.Data(http.StatusOK, gin.MIMEJSON, response)
 }

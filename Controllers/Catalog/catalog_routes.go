@@ -7,7 +7,8 @@ import (
 
 func RegisterRoutes(r *gin.Engine, db *mongo.Database) {
 	r.GET("/catalog/api/v1/storefront/:cid", func(c *gin.Context) {
-		GetStaticCatalogStorefront(c)
+		cid := c.Param("cid")
+		GetStaticCatalogStorefront(c, db, cid)
 	})
 
 	r.POST("/catalog/api/v1/purchase/:type", func(c *gin.Context) {
