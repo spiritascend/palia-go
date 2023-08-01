@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"fmt"
 	"log"
 	"time"
 
@@ -11,17 +12,18 @@ import (
 	chat "palia-go/Controllers/Chat"
 	entitlements "palia-go/Controllers/Entitlements"
 	matchmaker "palia-go/Controllers/Matchmaker"
+	launcher "palia-go/Launcher"
 
 	"github.com/gin-gonic/gin"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
-func main() {
-
+func StartServer() {
 	ctx, cancel := context.WithTimeout(context.Background(), 20*time.Second)
 	defer cancel()
 
+	//gin.SetMode(gin.ReleaseMode)
 	r := gin.Default()
 
 	client, err := mongo.Connect(ctx, options.Client().ApplyURI("mongodb://localhost:27017"))
@@ -40,4 +42,15 @@ func main() {
 	catalog.RegisterRoutes(r, paliaDB)
 
 	r.Run("127.0.0.1:80")
+}
+
+func main() {
+	go func() {
+		StartServer()
+	}()
+
+	launcher.IntiializeLauncher()
+
+	fmt.Println("Application finished.")
+
 }

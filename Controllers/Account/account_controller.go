@@ -66,8 +66,6 @@ func CreateAccount(c *gin.Context, db *mongo.Database) {
 		return
 	}
 
-	var DupeResult Account
-
 	filter := bson.M{
 		"$or": []bson.M{
 			{"email": requestPayload.Email},
@@ -75,7 +73,7 @@ func CreateAccount(c *gin.Context, db *mongo.Database) {
 		},
 	}
 
-	err := accountscollection.FindOne(ctx, filter).Decode(&DupeResult)
+	err := accountscollection.FindOne(ctx, filter).Decode(nil)
 
 	if err != mongo.ErrNoDocuments {
 		c.JSON(403, gin.H{"error": "Email or Username Duplicate"})
