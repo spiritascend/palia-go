@@ -2,8 +2,8 @@ package main
 
 import (
 	"context"
-	"fmt"
 	"log"
+	"os"
 	"time"
 
 	account "palia-go/Controllers/Account"
@@ -17,6 +17,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
+	"golang.org/x/exp/slices"
 )
 
 func StartServer() {
@@ -45,12 +46,14 @@ func StartServer() {
 }
 
 func main() {
-	go func() {
-		StartServer()
-	}()
+	args := os.Args
 
+	refuseserver := slices.Contains(args, "-noserver")
+
+	if !refuseserver {
+		go func() {
+			StartServer()
+		}()
+	}
 	launcher.IntiializeLauncher()
-
-	fmt.Println("Application finished.")
-
 }

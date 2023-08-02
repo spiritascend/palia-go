@@ -2,7 +2,6 @@ package launcher
 
 import (
 	"fmt"
-	"os/exec"
 
 	"fyne.io/fyne"
 	"fyne.io/fyne/app"
@@ -17,11 +16,10 @@ func LaunchGame() bool {
 		fmt.Println(err)
 		panic(1)
 	}
-	cmd := exec.Command(config.Path+"\\Palia\\Binaries\\Win64\\PaliaClient-Win64-Shipping.exe", "-console", "-log")
 
-	cmd.Run()
+	lperr := LaunchProcess(config.Path + "\\Palia\\Binaries\\Win64\\PaliaClient-Win64-Shipping.exe -console -log")
 
-	return true
+	return lperr != nil
 }
 
 func IntiializeLauncher() {

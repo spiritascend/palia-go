@@ -6,7 +6,6 @@ import (
 	"errors"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
@@ -181,7 +180,7 @@ func HandleDownload(button *widget.Button) {
 	}
 
 	// Create a temporary directory for downloading and unzipping
-	tempDir, err := ioutil.TempDir("D:\\Palia", "palia_temp_")
+	tempDir, err := os.MkdirTemp("D:\\Palia", "palia_temp_")
 	if err != nil {
 		fmt.Println("Error creating temporary directory:", err)
 		panic(1)
@@ -195,10 +194,8 @@ func HandleDownload(button *widget.Button) {
 	}
 	defer resp.Body.Close()
 
-	// Get the total content length to track the download progress
 	totalSize := resp.ContentLength
 
-	// Create a file to save the downloaded zip file in the temp directory
 	zipFilePath := filepath.Join(tempDir, "game.zip")
 	file, err := os.Create(zipFilePath)
 	if err != nil {
@@ -207,7 +204,6 @@ func HandleDownload(button *widget.Button) {
 	}
 	defer file.Close()
 
-	// Initialize the progress writer
 	progress := &ProgressWriter{
 		Writer:      io.MultiWriter(file),
 		TotalSize:   totalSize,
@@ -215,15 +211,13 @@ func HandleDownload(button *widget.Button) {
 		Button:      button,
 	}
 
-	// Copy the response body (zip content) to the file while tracking the progress
 	_, err = io.Copy(progress, resp.Body)
 	if err != nil {
 		fmt.Println("Error while copying zip content:", err)
 		panic(1)
 	}
 
-	// Unzip the downloaded file to the destination folder
-	destinationFolder := pconfig.Path // Change this to your desired folder path
+	destinationFolder := pconfig.Path
 
 	button.SetText("Unzipping")
 	err = unzipFile(zipFilePath, destinationFolder)

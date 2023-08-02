@@ -3,8 +3,14 @@ module palia-go
 go 1.20
 
 require (
-	fyne.io/fyne v1.4.3 // indirect
-	fyne.io/fyne/v2 v2.3.5 // indirect
+	fyne.io/fyne v1.4.3
+	github.com/gin-gonic/gin v1.9.1
+	github.com/google/uuid v1.3.0
+	go.mongodb.org/mongo-driver v1.12.0
+	golang.org/x/exp v0.0.0-20230801115018-d63ba01acd4b
+)
+
+require (
 	github.com/bytedance/sonic v1.9.1 // indirect
 	github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
@@ -12,7 +18,6 @@ require (
 	github.com/fyne-io/mobile v0.1.2 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.2 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
-	github.com/gin-gonic/gin v1.9.1 // indirect
 	github.com/go-gl/gl v0.0.0-20211210172815-726fda9656d6 // indirect
 	github.com/go-gl/glfw/v3.3/glfw v0.0.0-20221017161538-93cebf72946b // indirect
 	github.com/go-playground/locales v0.14.1 // indirect
@@ -22,7 +27,6 @@ require (
 	github.com/godbus/dbus/v5 v5.1.0 // indirect
 	github.com/goki/freetype v0.0.0-20220119013949-7a161fd3728c // indirect
 	github.com/golang/snappy v0.0.1 // indirect
-	github.com/google/uuid v1.3.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/klauspost/compress v1.13.6 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.4 // indirect
@@ -42,10 +46,8 @@ require (
 	github.com/xdg-go/scram v1.1.2 // indirect
 	github.com/xdg-go/stringprep v1.0.4 // indirect
 	github.com/youmark/pkcs8 v0.0.0-20181117223130-1be2e3e5546d // indirect
-	go.mongodb.org/mongo-driver v1.12.0 // indirect
 	golang.org/x/arch v0.3.0 // indirect
 	golang.org/x/crypto v0.9.0 // indirect
-	golang.org/x/exp v0.0.0-20230728194245-b0cb94b80691 // indirect
 	golang.org/x/image v0.3.0 // indirect
 	golang.org/x/net v0.10.0 // indirect
 	golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4 // indirect
