@@ -108,6 +108,7 @@ func NeedUpdate() (bool, map[string]string, error) {
 	}
 
 	NeededFiles := make(map[string]string, 0)
+	GetLatestExe := make(map[string]string, 0)
 
 	jsonparser.ObjectEach(reqbody, func(key []byte, value []byte, dataType jsonparser.ValueType, offset int) error {
 
@@ -124,9 +125,7 @@ func NeedUpdate() (bool, map[string]string, error) {
 			if !baseLineVer {
 
 				if strings.HasSuffix(trimmedFileURL, ".exe") {
-					if !fileExists(Config.Path + "\\Palia\\Binaries\\Win64\\" + trimmedFileURL) {
-						NeededFiles[trimmedFileURL] = fileURL
-					}
+					GetLatestExe[trimmedFileURL] = fileURL
 				}
 
 				if strings.HasSuffix(trimmedFileURL, ".pak") {
@@ -143,7 +142,7 @@ func NeedUpdate() (bool, map[string]string, error) {
 	if len(NeededFiles) == 0 {
 		return false, NeededFiles, nil
 	}
-
+	NeededFiles["PaliaClient-Win64-Shipping.exe"] = GetLatestExe["PaliaClient-Win64-Shipping.exe"]
 	fmt.Printf("Pending Install: %v\n", NeededFiles)
 	return true, NeededFiles, nil
 }
