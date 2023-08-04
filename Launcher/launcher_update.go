@@ -13,14 +13,15 @@ import (
 	"strings"
 
 	"fyne.io/fyne/widget"
+	"github.com/buger/jsonparser"
 )
 
-type ManifestStructure struct {
-	Version     string `json:"version"`
-	URL         string `json:"url"`
-	ManifestURL string `json:"manifest_url"`
-	PatchMethod string `json:"patch_method"`
-	Entry       string `json:"entry"`
+type VersionData map[string]struct {
+	BaseLineVer bool `json:"BaseLineVer"`
+	Files       []struct {
+		URL  string `json:"URL"`
+		Hash string `json:"Hash"`
+	} `json:"Files"`
 }
 
 type LocalConfig struct {
@@ -36,6 +37,11 @@ type BuildVersion struct {
 	IsLicenseeVersion    int    `json:"IsLicenseeVersion"`
 	IsPromotedBuild      int    `json:"IsPromotedBuild"`
 	BranchName           string `json:"BranchName"`
+}
+
+func fileExists(filename string) bool {
+	_, err := os.Stat(filename)
+	return err == nil
 }
 
 func GetConfig() (LocalConfig, bool) {
@@ -74,32 +80,7 @@ func GetLocalBuildVersion() (string, error) {
 	return strings.TrimPrefix(BuildInfo.BranchName, "++Valeria+Release_"), nil
 }
 
-func GetPaliaManifest() (ManifestStructure, error) {
-
-	var Ret ManifestStructure
-
-	resp, err := http.Get("https://update.palia.com/manifest/Palia.json")
-	if err != nil {
-		fmt.Println("Error:", err)
-		return ManifestStructure{}, err
-	}
-	defer resp.Body.Close()
-
-	reqbody, err := io.ReadAll(resp.Body)
-	if err != nil {
-		fmt.Println("Error reading response body:", err)
-		return ManifestStructure{}, err
-	}
-
-	err = json.Unmarshal(reqbody, &Ret)
-	if err != nil {
-		fmt.Println("Error unmarshaling Manifest:", err)
-		return ManifestStructure{}, err
-	}
-
-	return Ret, nil
-}
-func NeedToUpdate() (bool, error) {
+func NeedUpdate() (bool, map[string]string, error) {
 
 	LocalBuildVersion, err := GetLocalBuildVersion()
 	if err != nil {
@@ -107,18 +88,64 @@ func NeedToUpdate() (bool, error) {
 		panic(1)
 	}
 
-	Manifest, err := GetPaliaManifest()
+	Config, hiccup := GetConfig()
 
+	if hiccup {
+		return false, map[string]string{}, errors.New("failed to get local config")
+	}
+
+	resp, err := http.Get("https://update.palia.com/manifest/PatchManifest.json")
 	if err != nil {
-		fmt.Println(err)
-		panic(1)
+		log.Fatal("Error:", err)
+		return false, map[string]string{}, errors.New("failed to get patch manifest")
+	}
+	defer resp.Body.Close()
+
+	reqbody, err := io.ReadAll(resp.Body)
+	if err != nil {
+		log.Fatal("Error reading response body:", err)
+		return false, map[string]string{}, errors.New("error reading response body")
 	}
 
-	if LocalBuildVersion == Manifest.Version {
-		return false, nil
-	} else {
-		return true, nil
+	NeededFiles := make(map[string]string, 0)
+
+	jsonparser.ObjectEach(reqbody, func(key []byte, value []byte, dataType jsonparser.ValueType, offset int) error {
+
+		baseLineVer, _ := jsonparser.GetBoolean(value, "BaseLineVer")
+
+		jsonparser.ArrayEach(value, func(val []byte, dataType jsonparser.ValueType, offset int, err error) {
+			fileURL, _ := jsonparser.GetString(val, "URL")
+			trimmedFileURL := strings.ReplaceAll(strings.ReplaceAll(fileURL, "https://update.palia.com/val/", ""), "v"+strings.ReplaceAll(string(key), ".", "")+"/", "")
+
+			if string(key) != LocalBuildVersion && baseLineVer {
+				NeededFiles[trimmedFileURL] = fileURL
+			}
+
+			if !baseLineVer {
+
+				if strings.HasSuffix(trimmedFileURL, ".exe") {
+					if !fileExists(Config.Path + "\\Palia\\Binaries\\Win64\\" + trimmedFileURL) {
+						NeededFiles[trimmedFileURL] = fileURL
+					}
+				}
+
+				if strings.HasSuffix(trimmedFileURL, ".pak") {
+					if !fileExists(Config.Path + "\\Palia\\Content\\Paks\\" + trimmedFileURL) {
+						NeededFiles[trimmedFileURL] = fileURL
+					}
+				}
+
+			}
+		}, "Files")
+		return nil
+	})
+
+	if len(NeededFiles) == 0 {
+		return false, NeededFiles, nil
 	}
+
+	fmt.Printf("Pending Install: %v\n", NeededFiles)
+	return true, NeededFiles, nil
 }
 
 func unzipFile(zipFilePath, destinationFolder string) error {
@@ -164,20 +191,7 @@ func unzipFile(zipFilePath, destinationFolder string) error {
 	return nil
 }
 
-func HandleDownload(button *widget.Button) {
-	button.SetText("Updating")
-	pconfig, cerr := GetConfig()
-
-	if cerr {
-		fmt.Println(cerr)
-		panic(1)
-	}
-
-	Manifest, err := GetPaliaManifest()
-	if err != nil {
-		fmt.Println(err)
-		panic(1)
-	}
+func HandleBaseGameDownload(pconfig *LocalConfig, url string, button *widget.Button) {
 
 	// Create a temporary directory for downloading and unzipping
 	tempDir, err := os.MkdirTemp("D:\\Palia", "palia_temp_")
@@ -187,7 +201,7 @@ func HandleDownload(button *widget.Button) {
 	}
 	defer os.RemoveAll(tempDir)
 
-	resp, err := http.Get(Manifest.URL)
+	resp, err := http.Get(url)
 	if err != nil {
 		fmt.Println("Error Getting Palia Game Zip File", err)
 		panic(1)
@@ -224,6 +238,65 @@ func HandleDownload(button *widget.Button) {
 	if err != nil {
 		fmt.Println("Error while unzipping:", err)
 		panic(1)
+	}
+
+}
+
+func DownloadUpdate(filesneeded map[string]string, button *widget.Button) {
+	pconfig, cerr := GetConfig()
+
+	if cerr {
+		fmt.Println(cerr)
+		panic(1)
+	}
+
+	for key, value := range filesneeded {
+		button.SetText("Updating")
+
+		if strings.HasSuffix(key, ".zip") {
+			HandleBaseGameDownload(&pconfig, value, button)
+			continue
+		}
+
+		resp, err := http.Get(value)
+		if err != nil {
+			fmt.Println("Error Getting Palia Game Zip File", err)
+			panic(1)
+		}
+		defer resp.Body.Close()
+
+		totalSize := resp.ContentLength
+
+		var binaryfilepath string
+
+		if strings.HasSuffix(key, ".exe") {
+
+			binaryfilepath = filepath.Join(pconfig.Path, "\\Palia\\Binaries\\Win64\\"+key)
+		}
+		if strings.HasSuffix(key, ".pak") {
+
+			binaryfilepath = filepath.Join(pconfig.Path, "\\Palia\\Content\\Paks\\"+key)
+		}
+
+		file, err := os.Create(binaryfilepath)
+		if err != nil {
+			fmt.Println("Error creating file:", err)
+			panic(1)
+		}
+		defer file.Close()
+
+		progress := &ProgressWriter{
+			Writer:      io.MultiWriter(file),
+			TotalSize:   totalSize,
+			CurrentSize: 0,
+			Button:      button,
+		}
+
+		_, err = io.Copy(progress, resp.Body)
+		if err != nil {
+			fmt.Println("Error while copying file content:", err)
+			panic(1)
+		}
 	}
 
 	button.Enable()

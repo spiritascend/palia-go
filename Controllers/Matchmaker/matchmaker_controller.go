@@ -97,8 +97,8 @@ func JoinMatchmakerStatus(c *gin.Context) {
 					BeaconPort int    `json:"beacon_port"`
 				}{
 					Addr:       "127.0.0.1",
-					Port:       1337,
-					BeaconPort: 1337,
+					Port:       59933,
+					BeaconPort: 7776,
 				},
 			},
 			Expiry: 1630000000,

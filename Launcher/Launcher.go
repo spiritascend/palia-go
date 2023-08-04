@@ -31,22 +31,18 @@ func IntiializeLauncher() {
 	var LaunchOrDownloadButton *widget.Button
 
 	LaunchOrDownloadButton = widget.NewButton("{Button}", func() {
-		NeedToUpdate, err := NeedToUpdate()
+		needtoupdate, filesneeded, _ := NeedUpdate()
 
-		if err != nil {
-			fmt.Println(err)
-			panic(1)
-		}
-
-		if !NeedToUpdate {
+		if !needtoupdate {
 			go LaunchGame()
 			LaunchOrDownloadButton.Text = "Launch Game"
 			return
 		} else {
 			LaunchOrDownloadButton.Disable()
 			LaunchOrDownloadButton.Text = "Update Game"
-			go HandleDownload(LaunchOrDownloadButton)
+			go DownloadUpdate(filesneeded, LaunchOrDownloadButton)
 		}
+
 	})
 
 	LaunchOrDownloadButton.Text = "Launch Game"
