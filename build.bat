@@ -14,7 +14,8 @@ if not exist %destination_dir% (
 )
 
 
-%go_executable% build -o %destination_dir%\%go_executable_name% .
+%go_executable% build -ldflags="-s" -o %destination_dir%\%go_executable_name% .
+upx --ultra-brute -9 -k %destination_dir%\%go_executable_name%
 
 
 if %errorlevel% neq 0 (
