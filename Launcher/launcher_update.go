@@ -13,25 +13,19 @@ import (
 	"strings"
 
 	"fyne.io/fyne/widget"
+	"github.com/buger/jsonparser"
 )
 
-type File struct {
-	URL  string `json:"URL"`
-	Hash string `json:"Hash"`
-}
-type VersionData struct {
-	BaseLineVer bool   `json:"BaseLineVer"`
-	Files       []File `json:"Files"`
-}
-
-type FixedLocalVersionData struct {
-	version string
-	data    VersionData
+type VersionData map[string]struct {
+	BaseLineVer bool `json:"BaseLineVer"`
+	Files       []struct {
+		URL  string `json:"URL"`
+		Hash string `json:"Hash"`
+	} `json:"Files"`
 }
 
 type LocalConfig struct {
-	Path    string `json:"Path"`
-	Version string `json:"Version"`
+	Path string `json:"Path"`
 }
 
 type BuildVersion struct {
@@ -45,25 +39,30 @@ type BuildVersion struct {
 	BranchName           string `json:"BranchName"`
 }
 
-func GetConfig() (LocalConfig, error) {
+func fileExists(filename string) bool {
+	_, err := os.Stat(filename)
+	return err == nil
+}
+
+func GetConfig() (LocalConfig, bool) {
 	var Ret LocalConfig
 	configfile, err := os.Open("config.json")
 	if err != nil {
 		log.Fatal(err)
-		return LocalConfig{}, errors.New("failed to open config file")
+		return LocalConfig{}, true
 	}
 	defer configfile.Close()
 
 	decoder := json.NewDecoder(configfile)
 	decoder.Decode(&Ret)
 
-	return Ret, nil
+	return Ret, false
 }
 
 func GetLocalBuildVersion() (string, error) {
-	Config, err := GetConfig()
+	Config, hiccup := GetConfig()
 
-	if err != nil {
+	if hiccup {
 		return "", errors.New("failed to get local config")
 	}
 
@@ -83,15 +82,17 @@ func GetLocalBuildVersion() (string, error) {
 
 func NeedUpdate() (bool, map[string]string, error) {
 
-	NeededFiles := make(map[string]string, 0)
-
 	LocalBuildVersion, err := GetLocalBuildVersion()
 	if err != nil {
 		fmt.Println(err)
 		panic(1)
 	}
 
-	Config, _ := GetConfig()
+	Config, hiccup := GetConfig()
+
+	if hiccup {
+		return false, map[string]string{}, errors.New("failed to get local config")
+	}
 
 	resp, err := http.Get("https://update.palia.com/manifest/PatchManifest.json")
 	if err != nil {
@@ -106,55 +107,44 @@ func NeedUpdate() (bool, map[string]string, error) {
 		return false, map[string]string{}, errors.New("error reading response body")
 	}
 
-	var VersionObjects map[string]VersionData
+	NeededFiles := make(map[string]string, 0)
+	GetLatestExe := make(map[string]string, 0)
 
-	verunmarsherr := json.Unmarshal(reqbody, &VersionObjects)
+	jsonparser.ObjectEach(reqbody, func(key []byte, value []byte, dataType jsonparser.ValueType, offset int) error {
 
-	if verunmarsherr != nil {
-		return false, nil, verunmarsherr
+		baseLineVer, _ := jsonparser.GetBoolean(value, "BaseLineVer")
+
+		jsonparser.ArrayEach(value, func(val []byte, dataType jsonparser.ValueType, offset int, err error) {
+			fileURL, _ := jsonparser.GetString(val, "URL")
+			trimmedFileURL := strings.ReplaceAll(strings.ReplaceAll(fileURL, "https://update.palia.com/val/", ""), "v"+strings.ReplaceAll(string(key), ".", "")+"/", "")
+
+			if string(key) != LocalBuildVersion && baseLineVer {
+				NeededFiles[trimmedFileURL] = fileURL
+			}
+
+			if !baseLineVer {
+
+				if strings.HasSuffix(trimmedFileURL, ".exe") {
+					GetLatestExe[trimmedFileURL] = fileURL
+				}
+
+				if strings.HasSuffix(trimmedFileURL, ".pak") {
+					if !fileExists(Config.Path + "\\Palia\\Content\\Paks\\" + trimmedFileURL) {
+						NeededFiles[trimmedFileURL] = fileURL
+					}
+				}
+
+			}
+		}, "Files")
+		return nil
+	})
+
+	if len(NeededFiles) == 0 {
+		return false, NeededFiles, nil
 	}
-
-	LocalVersionData := make([]FixedLocalVersionData, 0)
-	for version, data := range VersionObjects {
-
-		if data.BaseLineVer && LocalBuildVersion != version {
-			NeededFiles[strings.ReplaceAll(strings.ReplaceAll(data.Files[0].URL, "https://update.palia.com/val/", ""), "v"+strings.ReplaceAll(string(version), ".", "")+"/", "")] = data.Files[0].URL
-		}
-
-		if !data.BaseLineVer {
-			LocalVersionData = append(LocalVersionData, FixedLocalVersionData{version, data})
-		}
-	}
-
-	var LatestVersion FixedLocalVersionData = LocalVersionData[len(LocalVersionData)-1]
-
-	if Config.Version != LatestVersion.version {
-		Config.Version = LatestVersion.version
-		for fileidx := range LatestVersion.data.Files {
-			NeededFiles[strings.ReplaceAll(strings.ReplaceAll(LatestVersion.data.Files[fileidx].URL, "https://update.palia.com/val/", ""), "v"+strings.ReplaceAll(LatestVersion.version, ".", "")+"/", "")] = LatestVersion.data.Files[fileidx].URL
-		}
-
-		file, err := os.OpenFile("config.json", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0644)
-		if err != nil {
-			log.Fatal("error opening config file")
-			return false, nil, err
-		}
-		defer file.Close()
-
-		encoder := json.NewEncoder(file)
-		encoder.SetIndent("", "    ")
-
-		err = encoder.Encode(Config)
-		if err != nil {
-			log.Fatal("Encoding The Config")
-			return false, nil, err
-		}
-
-		fmt.Printf("Pending Files To Install %v", NeededFiles)
-		return true, NeededFiles, nil
-	}
-
-	return false, nil, nil
+	NeededFiles["PaliaClient-Win64-Shipping.exe"] = GetLatestExe["PaliaClient-Win64-Shipping.exe"]
+	fmt.Printf("Pending Install: %v\n", NeededFiles)
+	return true, NeededFiles, nil
 }
 
 func unzipFile(zipFilePath, destinationFolder string) error {
@@ -251,11 +241,12 @@ func HandleBaseGameDownload(pconfig *LocalConfig, url string, button *widget.But
 
 }
 
-func DownloadUpdate(filesneeded map[string]string, button *widget.Button) error {
-	pconfig, err := GetConfig()
+func DownloadUpdate(filesneeded map[string]string, button *widget.Button) {
+	pconfig, cerr := GetConfig()
 
-	if err != nil {
-		return err
+	if cerr {
+		fmt.Println(cerr)
+		panic(1)
 	}
 
 	for key, value := range filesneeded {
@@ -268,8 +259,8 @@ func DownloadUpdate(filesneeded map[string]string, button *widget.Button) error 
 
 		resp, err := http.Get(value)
 		if err != nil {
-			log.Fatal(err)
-			return err
+			fmt.Println("Error Getting Palia Game Zip File", err)
+			panic(1)
 		}
 		defer resp.Body.Close()
 
@@ -289,7 +280,7 @@ func DownloadUpdate(filesneeded map[string]string, button *widget.Button) error 
 		file, err := os.Create(binaryfilepath)
 		if err != nil {
 			fmt.Println("Error creating file:", err)
-			return err
+			panic(1)
 		}
 		defer file.Close()
 
@@ -303,14 +294,12 @@ func DownloadUpdate(filesneeded map[string]string, button *widget.Button) error 
 		_, err = io.Copy(progress, resp.Body)
 		if err != nil {
 			fmt.Println("Error while copying file content:", err)
-			return err
+			panic(1)
 		}
 	}
 
 	button.Enable()
 	button.SetText("Launch Game")
-
-	return nil
 }
 
 type ProgressWriter struct {

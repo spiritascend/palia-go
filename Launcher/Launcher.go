@@ -12,7 +12,7 @@ import (
 func LaunchGame() bool {
 	config, err := GetConfig()
 
-	if err != nil {
+	if err {
 		fmt.Println(err)
 		panic(1)
 	}
@@ -31,35 +31,16 @@ func IntiializeLauncher() {
 	var LaunchOrDownloadButton *widget.Button
 
 	LaunchOrDownloadButton = widget.NewButton("{Button}", func() {
-		needtoupdate, filesneeded, err := NeedUpdate()
+		needtoupdate, filesneeded, _ := NeedUpdate()
 
-		if !needtoupdate || err != nil {
+		if !needtoupdate {
 			go LaunchGame()
 			LaunchOrDownloadButton.Text = "Launch Game"
 			return
 		} else {
-
-			downloaderrorChannel := make(chan error)
-
 			LaunchOrDownloadButton.Disable()
 			LaunchOrDownloadButton.Text = "Update Game"
-
-			go func() {
-				err := DownloadUpdate(filesneeded, LaunchOrDownloadButton)
-				if err != nil {
-					downloaderrorChannel <- err
-					return
-				}
-				downloaderrorChannel <- nil
-			}()
-
-			err := <-downloaderrorChannel
-
-			if err != nil {
-				LaunchOrDownloadButton.Enable()
-				LaunchOrDownloadButton.Text = "Launch Game"
-			}
-
+			go DownloadUpdate(filesneeded, LaunchOrDownloadButton)
 		}
 
 	})
