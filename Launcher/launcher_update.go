@@ -44,25 +44,25 @@ func fileExists(filename string) bool {
 	return err == nil
 }
 
-func GetConfig() (LocalConfig, bool) {
+func GetConfig() (LocalConfig, error) {
 	var Ret LocalConfig
 	configfile, err := os.Open("config.json")
 	if err != nil {
 		log.Fatal(err)
-		return LocalConfig{}, true
+		return LocalConfig{}, errors.New("failed to open config file")
 	}
 	defer configfile.Close()
 
 	decoder := json.NewDecoder(configfile)
 	decoder.Decode(&Ret)
 
-	return Ret, false
+	return Ret, nil
 }
 
 func GetLocalBuildVersion() (string, error) {
-	Config, hiccup := GetConfig()
+	Config, err := GetConfig()
 
-	if hiccup {
+	if err != nil {
 		return "", errors.New("failed to get local config")
 	}
 
@@ -88,9 +88,9 @@ func NeedUpdate() (bool, map[string]string, error) {
 		panic(1)
 	}
 
-	Config, hiccup := GetConfig()
+	Config, err := GetConfig()
 
-	if hiccup {
+	if err != nil {
 		return false, map[string]string{}, errors.New("failed to get local config")
 	}
 
@@ -241,12 +241,11 @@ func HandleBaseGameDownload(pconfig *LocalConfig, url string, button *widget.But
 
 }
 
-func DownloadUpdate(filesneeded map[string]string, button *widget.Button) {
-	pconfig, cerr := GetConfig()
+func DownloadUpdate(filesneeded map[string]string, button *widget.Button) error {
+	pconfig, err := GetConfig()
 
-	if cerr {
-		fmt.Println(cerr)
-		panic(1)
+	if err != nil {
+		return err
 	}
 
 	for key, value := range filesneeded {
@@ -259,8 +258,8 @@ func DownloadUpdate(filesneeded map[string]string, button *widget.Button) {
 
 		resp, err := http.Get(value)
 		if err != nil {
-			fmt.Println("Error Getting Palia Game Zip File", err)
-			panic(1)
+			log.Fatal(err)
+			return err
 		}
 		defer resp.Body.Close()
 
@@ -280,7 +279,7 @@ func DownloadUpdate(filesneeded map[string]string, button *widget.Button) {
 		file, err := os.Create(binaryfilepath)
 		if err != nil {
 			fmt.Println("Error creating file:", err)
-			panic(1)
+			return err
 		}
 		defer file.Close()
 
@@ -294,12 +293,14 @@ func DownloadUpdate(filesneeded map[string]string, button *widget.Button) {
 		_, err = io.Copy(progress, resp.Body)
 		if err != nil {
 			fmt.Println("Error while copying file content:", err)
-			panic(1)
+			return err
 		}
 	}
 
 	button.Enable()
 	button.SetText("Launch Game")
+
+	return nil
 }
 
 type ProgressWriter struct {
